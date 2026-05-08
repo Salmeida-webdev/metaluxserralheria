@@ -1,0 +1,230 @@
+@media (max-width: 1400px) {
+  .section-header h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content h2,
+  .section-header h2 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav {
+    position: fixed;
+    top: 90px;
+    right: 5%;
+    width: 90%;
+    background: rgba(5, 5, 5, 0.96);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(216, 163, 77, 0.18);
+    border-radius: 22px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: 0.4s ease;
+  }
+
+  .nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 0 14px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+
+  .menu-toggle.active span:first-child {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+
+  .menu-toggle.active span:last-child {
+    transform: rotate(-45deg) translate(2px, -2px);
+  }
+
+  .hero {
+    min-height: 78vh;
+  }
+
+  .cta-section {
+    min-height: 560px;
+  }
+
+  .about-content h2,
+  .section-header h2 {
+    font-size: 40px;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 90px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .logo img {
+    width: 170px;
+  }
+
+  .hero {
+    min-height: 72vh;
+  }
+
+  .hero-bg img {
+    object-position: 62% center;
+  }
+
+  .cta-section {
+    min-height: 500px;
+  }
+
+  .cta-bg img {
+    object-position: 65% center;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .section-header h2,
+  .about-content h2 {
+    font-size: 34px;
+  }
+
+  .section-header p {
+    font-size: 16px;
+  }
+
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .testimonial-card,
+  .process-card {
+    padding: 32px;
+  }
+
+  .service-card h3,
+  .process-card h3 {
+    font-size: 24px;
+  }
+
+  .whatsapp-float {
+    width: 66px;
+    height: 66px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .whatsapp-float span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 16px 0;
+  }
+
+  .hero {
+    min-height: 64vh;
+  }
+
+  .cta-section {
+    min-height: 420px;
+  }
+
+  .section-header h2,
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  .about-content p,
+  .service-card p,
+  .process-card p,
+  .testimonial-card p,
+  .footer-brand p {
+    font-size: 15px;
+  }
+
+  .footer {
+    padding-top: 70px;
+  }
+
+  .footer-grid {
+    padding-bottom: 50px;
+  }
+
+  .footer-info h3,
+  .footer-nav h3 {
+    font-size: 22px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .service-card,
+  .testimonial-card,
+  .process-card,
+  .about-points div {
+    border-radius: 20px;
+  }
+}

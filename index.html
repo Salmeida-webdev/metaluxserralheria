@@ -2,44 +2,171 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metalux Serralheria | Soluções em Serralheria Moderna</title>
+
+    <title>
+      Metalux Serralheria | Portões, Grades e Estruturas Metálicas em Mauá-SP
+    </title>
+
     <meta
       name="description"
-      content="Metalux Serralheria em Mauá-SP. Portões, grades, corrimãos, coberturas, estruturas metálicas, portas e esquadrias de alumínio sob medida."
+      content="Metalux Serralheria em Mauá-SP. Portões, grades, corrimãos, coberturas, estruturas metálicas e esquadrias sob medida com acabamento premium, segurança e valorização do imóvel."
     />
+
+    <meta
+      name="keywords"
+      content="serralheria em Mauá, portões em Mauá, grades em Mauá, corrimãos em Mauá, coberturas metálicas, estruturas metálicas, esquadrias de alumínio"
+    />
+
+    <meta name="author" content="Segundo Almeida" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Open Graph -->
+
+    <meta
+      property="og:title"
+      content="Metalux Serralheria | Segurança, acabamento e valorização"
+    />
+
+    <meta
+      property="og:description"
+      content="Projetos sob medida em metal e alumínio para quem busca segurança, durabilidade e acabamento premium."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://serralheriametalux.com.br/" />
+
+    <meta property="og:image" content="assets/hero/hero-metalux-bg.webp" />
+
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Canonical -->
+
+    <link rel="canonical" href="https://serralheriametalux.com.br/" />
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="assets/logo/favicon-metalux.webp" />
+
+    <!-- Preload -->
+
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero/hero-metalux-bg.webp"
+      media="(min-width: 769px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero/hero-metalux-mobile.webp"
+      media="(max-width: 768px)"
+      fetchpriority="high"
+    />
+
+    <link rel="preload" as="image" href="assets/logo/logo-metalux.webp" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Schema -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Metalux Serralheria",
+        "description": "Serralheria em Mauá-SP especializada em portões, grades, corrimãos, coberturas, estruturas metálicas e esquadrias sob medida.",
+        "image": "https://serralheriametalux.com.br/assets/hero/hero-metalux-bg.webp",
+        "url": "https://serralheriametalux.com.br/",
+        "telephone": "+5511942281355",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Mario, 284",
+          "addressLocality": "Mauá",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "openingHours": "Mo-Fr 07:30-18:00",
+        "sameAs": ["https://instagram.com/metalux._.serralheria"]
+      }
+    </script>
   </head>
 
   <body>
-    <div class="loader" id="loader">
-      <img src="assets/logo/logo-metalux.png" alt="Logo Metalux Serralheria" />
+    <!-- Loader -->
+
+    <div class="loader" id="loader" aria-hidden="true">
+      <img
+        src="assets/logo/logo-metalux-symbol.webp"
+        alt=""
+        width="120"
+        height="120"
+        fetchpriority="high"
+        decoding="async"
+      />
     </div>
+
+    <!-- Header -->
 
     <header class="header" id="header">
       <div class="container header-container">
-        <a href="#inicio" class="logo">
-          <img src="assets/logo/logo-metalux.png" alt="Metalux Serralheria" />
+        <a href="#inicio" class="logo" aria-label="Ir para o início da Metalux">
+          <img
+            src="assets/logo/logo-metalux.webp"
+            alt="Metalux Serralheria"
+            width="185"
+            height="60"
+            fetchpriority="high"
+            decoding="async"
+          />
         </a>
 
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" aria-label="Navegação principal">
           <a href="#inicio">Início</a>
           <a href="#sobre">Sobre</a>
           <a href="#servicos">Serviços</a>
+          <a href="#processo">Processo</a>
           <a href="#depoimentos">Depoimentos</a>
           <a href="#contato">Contato</a>
         </nav>
 
         <a
           href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
-          class="header-btn"
           target="_blank"
+          rel="noopener"
+          class="header-btn"
+          aria-label="Solicitar orçamento pelo WhatsApp"
         >
-          Orçamento
+          Solicitar orçamento
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
         </button>
@@ -47,286 +174,461 @@
     </header>
 
     <main>
+      <!-- HERO -->
+
       <section class="hero" id="inicio">
-        <div class="hero-bg">
-          <img
-            src="assets/hero/hero-metalux.png"
-            alt="Metalux Serralheria - Fachada moderna com portão metálico"
-          />
+        <div class="container hero-container">
+          <div class="hero-content reveal">
+            <span class="hero-badge">
+              Mauá-SP • Projetos sob medida em metal e alumínio
+            </span>
 
-          <a
-            href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Metalux."
-            target="_blank"
-            class="hero-whatsapp"
-            aria-label="WhatsApp Hero"
-          ></a>
-        </div>
-      </section>
-      <section class="section about" id="sobre">
-        <div class="container about-grid">
-          <div class="about-image reveal">
-            <img
-              src="assets/sobre/sobre-metalux.png"
-              alt="Sobre a Metalux Serralheria"
-            />
-          </div>
+            <span class="section-tag"> Metalux Serralheria </span>
 
-          <div class="about-content reveal">
-            <span class="section-tag">Sobre a Metalux</span>
-            <h2>Excelência em serralheria com compromisso em cada detalhe.</h2>
+            <h1>Segurança, acabamento e valorização para seu imóvel.</h1>
 
             <p>
-              Na Metalux Serralheria, cada projeto é desenvolvido com atenção
-              aos detalhes, qualidade nos materiais e compromisso com um
-              acabamento profissional.
+              Portões, grades, corrimãos, coberturas e estruturas metálicas
+              desenvolvidas para entregar proteção, durabilidade e um acabamento
+              premium que transforma o visual do ambiente.
             </p>
 
-            <p>
-              Trabalhamos com portões, corrimãos, coberturas, estruturas
-              metálicas e esquadrias de alumínio sob medida, unindo resistência,
-              funcionalidade e um visual moderno para o seu espaço.
-            </p>
+            <div class="hero-actions">
+              <a
+                href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+                aria-label="Solicitar orçamento"
+              >
+                Solicitar orçamento
+              </a>
 
-            <p>
-              Nosso objetivo vai além da fabricação: buscamos entregar
-              segurança, durabilidade e um resultado que realmente valorize o
-              ambiente do cliente.
-            </p>
+              <a href="#servicos" class="btn btn-outline"> Ver serviços </a>
+            </div>
 
-            <div class="about-points">
-              <div>
-                <strong>Qualidade</strong>
-                <span>Materiais selecionados e acabamento premium.</span>
-              </div>
+            <div class="hero-metrics" aria-label="Diferenciais da Metalux">
+              <article>
+                <strong>Acabamento premium</strong>
 
-              <div>
-                <strong>Compromisso</strong>
-                <span>Atendimento responsável do orçamento à entrega.</span>
-              </div>
+                <span>
+                  Projetos executados com atenção aos detalhes, alinhamento e
+                  aparência profissional.
+                </span>
+              </article>
+
+              <article>
+                <strong>Projetos sob medida</strong>
+
+                <span>
+                  Soluções personalizadas para atender o estilo e a necessidade
+                  do imóvel.
+                </span>
+              </article>
+
+              <article>
+                <strong>Mais valorização</strong>
+
+                <span>
+                  Segurança, estética e resistência para transformar o espaço e
+                  elevar o valor visual da propriedade.
+                </span>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section services" id="servicos">
+      <!-- SOBRE -->
+
+      <section class="about section" id="sobre">
+        <div class="container about-container">
+          <div class="about-content reveal">
+            <span class="section-tag"> Sobre a Metalux </span>
+
+            <h2>
+              Soluções modernas em metal e alumínio com foco em qualidade e
+              confiança.
+            </h2>
+
+            <p>
+              A Metalux trabalha com projetos sob medida para residências e
+              empresas, unindo resistência, segurança e acabamento refinado em
+              cada serviço executado.
+            </p>
+
+            <p>
+              Cada etapa é pensada para entregar um resultado durável, funcional
+              e visualmente valorizado.
+            </p>
+
+            <div class="about-grid">
+              <article class="info-card reveal">
+                <strong> Atendimento direto </strong>
+
+                <span>
+                  Comunicação clara, orientação profissional e acompanhamento
+                  cuidadoso do início ao fim.
+                </span>
+              </article>
+
+              <article class="info-card reveal">
+                <strong> Estrutura profissional </strong>
+
+                <span>
+                  Serviços executados com foco em segurança, acabamento premium
+                  e longa durabilidade.
+                </span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+
+      <section class="services section" id="servicos">
         <div class="container">
           <div class="section-header reveal">
-            <span class="section-tag">Nossos serviços</span>
-            <h2>Soluções completas em metal e alumínio.</h2>
+            <span class="section-tag"> Serviços </span>
+
+            <h2>
+              Estruturas metálicas planejadas para unir proteção, estética e
+              resistência.
+            </h2>
+
             <p>
-              Serviços sob medida para quem busca segurança, durabilidade e um
-              acabamento que valoriza o imóvel.
+              Projetos personalizados desenvolvidos para entregar
+              funcionalidade, acabamento refinado e valorização visual.
             </p>
           </div>
 
-          <div class="services-feature reveal">
-            <img
-              src="assets/servicos/servicos-metalux.png"
-              alt="Serviços da Metalux Serralheria"
-            />
+          <div class="services-highlight reveal">
+            <div class="services-highlight-content">
+              <span> Execução sob medida </span>
+
+              <h3>
+                O acabamento certo para transformar o visual e a segurança do
+                seu imóvel.
+              </h3>
+
+              <p>
+                Soluções pensadas para unir estética, proteção e durabilidade
+                com aparência moderna e profissional.
+              </p>
+            </div>
           </div>
 
           <div class="services-grid">
             <article class="service-card reveal">
+              <span>01</span>
+
               <h3>Portões</h3>
+
               <p>
-                Portões modernos, resistentes e personalizados para residências
-                e comércios.
+                Portões resistentes e modernos para elevar a segurança e o
+                visual da entrada do imóvel.
               </p>
             </article>
 
             <article class="service-card reveal">
+              <span>02</span>
+
               <h3>Grades</h3>
+
               <p>
-                Grades de proteção com segurança, durabilidade e acabamento
+                Grades sob medida com acabamento refinado e integração visual
+                elegante.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <span>03</span>
+
+              <h3>Corrimãos</h3>
+
+              <p>
+                Segurança e estabilidade com aparência moderna e acabamento
                 profissional.
               </p>
             </article>
 
             <article class="service-card reveal">
-              <h3>Corrimãos</h3>
-              <p>
-                Corrimãos sob medida para escadas, áreas externas, sacadas e
-                ambientes internos.
-              </p>
-            </article>
+              <span>04</span>
 
-            <article class="service-card reveal">
               <h3>Coberturas</h3>
+
               <p>
-                Coberturas metálicas para garagens, áreas gourmet, entradas e
-                espaços comerciais.
+                Estruturas metálicas resistentes para áreas externas, garagens e
+                espaços de proteção.
               </p>
             </article>
 
             <article class="service-card reveal">
+              <span>05</span>
+
               <h3>Estruturas metálicas</h3>
+
               <p>
-                Projetos metálicos executados com precisão, resistência e
-                segurança.
+                Soluções robustas desenvolvidas para resistência, estabilidade e
+                longa durabilidade.
               </p>
             </article>
 
             <article class="service-card reveal">
-              <h3>Portas de alumínio</h3>
-              <p>
-                Portas de alumínio com visual moderno, leveza e excelente
-                resistência.
-              </p>
-            </article>
+              <span>06</span>
 
-            <article class="service-card reveal">
-              <h3>Esquadrias de alumínio</h3>
+              <h3>Esquadrias</h3>
+
               <p>
-                Esquadrias sob medida com estética, vedação, funcionalidade e
-                durabilidade.
+                Estruturas em alumínio com visual sofisticado e excelente
+                acabamento.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section process">
+      <!-- PROCESSO -->
+
+      <section class="process section" id="processo">
         <div class="container">
           <div class="section-header reveal">
-            <span class="section-tag">Como funciona</span>
-            <h2>Um atendimento simples, claro e profissional.</h2>
+            <span class="section-tag"> Processo </span>
+
+            <h2>
+              Atendimento organizado para garantir segurança e confiança em cada
+              etapa.
+            </h2>
           </div>
 
           <div class="process-grid">
-            <div class="process-card reveal">
+            <article class="process-card reveal">
               <span>01</span>
+
               <h3>Contato inicial</h3>
-              <p>Você chama no WhatsApp e explica o serviço que precisa.</p>
-            </div>
 
-            <div class="process-card reveal">
+              <p>
+                Você entra em contato e explica sua necessidade para análise do
+                projeto.
+              </p>
+            </article>
+
+            <article class="process-card reveal">
               <span>02</span>
-              <h3>Orçamento</h3>
-              <p>
-                Analisamos a necessidade e enviamos uma proposta personalizada.
-              </p>
-            </div>
 
-            <div class="process-card reveal">
-              <span>03</span>
-              <h3>Execução</h3>
+              <h3>Orçamento personalizado</h3>
+
               <p>
-                O serviço é realizado com atenção ao acabamento, prazo e
-                qualidade.
+                Avaliação técnica para indicar a melhor solução para o espaço e
+                acabamento desejado.
               </p>
-            </div>
+            </article>
+
+            <article class="process-card reveal">
+              <span>03</span>
+
+              <h3>Execução profissional</h3>
+
+              <p>
+                Desenvolvimento cuidadoso com foco em resistência, alinhamento e
+                acabamento premium.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section testimonials" id="depoimentos">
+      <!-- DEPOIMENTOS -->
+
+      <section class="testimonials section" id="depoimentos">
         <div class="container">
           <div class="section-header reveal">
-            <span class="section-tag">Depoimentos</span>
-            <h2>Clientes que confiaram na Metalux.</h2>
+            <span class="section-tag"> Depoimentos </span>
+
+            <h2>Resultados que transmitem confiança e valorizam o imóvel.</h2>
           </div>
 
           <div class="testimonials-grid">
             <article class="testimonial-card reveal">
               <div class="stars">★★★★★</div>
+
               <p>
-                “Excelente atendimento do começo ao fim. O portão ficou perfeito
-                e o acabamento superou minhas expectativas.”
+                “O acabamento ficou impecável e o portão valorizou muito a
+                fachada da casa.”
               </p>
-              <strong>Carlos Henrique</strong>
+
+              <strong> Carlos Henrique </strong>
             </article>
 
             <article class="testimonial-card reveal">
               <div class="stars">★★★★★</div>
+
               <p>
-                “Serviço rápido, organizado e com muita qualidade. Ficamos muito
-                satisfeitos com a cobertura instalada.”
+                “Atendimento rápido, serviço organizado e estrutura muito
+                resistente.”
               </p>
-              <strong>Mariana Alves</strong>
+
+              <strong> Mariana Alves </strong>
             </article>
 
             <article class="testimonial-card reveal">
               <div class="stars">★★★★★</div>
+
               <p>
-                “Profissionais responsáveis e atenciosos. As esquadrias ficaram
-                modernas e muito bem instaladas.”
+                “As esquadrias ficaram modernas e muito bem instaladas.
+                Excelente acabamento.”
               </p>
-              <strong>Roberto Lima</strong>
+
+              <strong> Roberto Lima </strong>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="cta-section">
-        <img
-          src="assets/cta/cta-metalux.png"
-          alt="Chamada para orçamento Metalux"
-          class="cta-image"
-        />
+      <!-- CTA -->
 
-        <a
-          href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Metalux."
-          target="_blank"
-          class="cta-whatsapp"
-          aria-label="WhatsApp CTA"
-        ></a>
+      <section class="cta section">
+        <div class="container">
+          <div class="cta-box reveal">
+            <span class="section-tag"> Solicite seu orçamento </span>
+
+            <h2>
+              Seu imóvel merece mais segurança, valorização e acabamento
+              profissional.
+            </h2>
+
+            <p>
+              Fale com a Metalux e receba orientação para transformar sua
+              necessidade em um projeto moderno, resistente e bem executado.
+            </p>
+
+            <a
+              href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+              aria-label="Falar com a Metalux no WhatsApp"
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer" id="contato">
-      <div class="container footer-grid">
+    <!-- FOOTER -->
+
+    <footer class="footer section" id="contato">
+      <div class="container footer-container">
         <div class="footer-brand">
-          <img src="assets/logo/logo-metalux.png" alt="Metalux Serralheria" />
+          <img
+            src="assets/logo/logo-metalux.webp"
+            alt="Metalux Serralheria"
+            width="190"
+            height="62"
+            loading="lazy"
+            decoding="async"
+          />
+
           <p>
-            Soluções em serralheria moderna com foco em segurança, durabilidade
-            e acabamento premium.
+            Serralheria moderna em Mauá-SP com foco em acabamento premium,
+            segurança e valorização do imóvel.
           </p>
         </div>
 
-        <div class="footer-info">
+        <div class="footer-column">
           <h3>Contato</h3>
-          <p>
-            WhatsApp:
-            <a href="https://wa.me/5511942281355" target="_blank"
-              >(11) 94228-1355</a
-            >
-          </p>
-          <p>
-            Instagram:
-            <a
-              href="https://instagram.com/metalux._.serralheria"
-              target="_blank"
-              >@metalux._.serralheria</a
-            >
-          </p>
-          <p>Endereço: Rua Mario, 284 — Vila Falchi, Mauá-SP</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://wa.me/5511942281355"
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp: (11) 94228-1355
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://instagram.com/metalux._.serralheria"
+                target="_blank"
+                rel="noopener"
+              >
+                Instagram: @metalux._.serralheria
+              </a>
+            </li>
+
+            <li>Rua Mario, 284 — Vila Falchi, Mauá-SP</li>
+
+            <li>Atendimento: 07:30 às 18:00</li>
+          </ul>
         </div>
 
-        <div class="footer-nav">
+        <div class="footer-column">
           <h3>Navegação</h3>
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#depoimentos">Depoimentos</a>
+
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+          </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>© 2026 Metalux Serralheria — Todos os direitos reservados.</p>
+
         <p>Desenvolvido por Segundo Almeida</p>
       </div>
     </footer>
 
+    <!-- WhatsApp -->
+
     <a
-      href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Metalux."
-      class="whatsapp-float"
+      href="https://wa.me/5511942281355?text=Olá,%20gostaria%20de%20um%20orçamento."
       target="_blank"
+      rel="noopener"
+      class="whatsapp-button"
       aria-label="Falar no WhatsApp"
     >
-      <span>☎</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 32 32"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          fill="#050505"
+          d="M16.04 3C8.84 3 3 8.72 3 15.78c0 2.47.73 4.88 2.1 6.95L3 29l6.46-2.02a13.2 13.2 0 0 0 6.58 1.78h.01C23.16 28.76 29 23.04 29 15.98 29 8.92 23.24 3 16.04 3Zm0 23.45h-.01a10.9 10.9 0 0 1-5.56-1.52l-.4-.24-3.83 1.2 1.25-3.68-.26-.39a10.6 10.6 0 0 1-1.67-5.65c0-5.93 4.8-10.75 10.7-10.75 2.86 0 5.54 1.1 7.55 3.12a10.67 10.67 0 0 1 3.13 7.56c0 5.93-4.8 10.75-10.7 10.75Z"
+        />
+
+        <path
+          fill="#050505"
+          d="M22.26 18.96c-.34-.17-2-.98-2.32-1.1-.3-.12-.54-.17-.76.17-.22.34-.88 1.1-1.08 1.32-.2.22-.39.24-.73.08-.34-.17-1.43-.52-2.72-1.66-1-.9-1.68-2-1.88-2.34-.2-.34-.02-.52.15-.7.15-.15.34-.39.51-.59.17-.2.22-.34.34-.56.12-.22.05-.42-.03-.59-.08-.17-.76-1.82-1.05-2.5-.27-.65-.54-.56-.76-.58h-.64c-.22 0-.59.08-.9.42-.3.34-1.17 1.15-1.17 2.8s1.2 3.25 1.37 3.47c.17.22 2.35 3.73 5.8 5.08.82.36 1.47.56 1.98.71.83.27 1.59.24 2.2.15.67-.1 2-.81 2.29-1.59.29-.78.29-1.44.2-1.58-.08-.14-.3-.22-.64-.39Z"
+        />
+      </svg>
     </a>
 
-    <script src="js/script.js"></script>
+    <!-- Back To Top -->
+
+    <button
+      class="back-to-top"
+      id="backToTop"
+      type="button"
+      aria-label="Voltar ao topo"
+    >
+      ↑
+    </button>
+
+    <!-- JS -->
+
+    <script src="js/script.js" defer></script>
   </body>
 </html>
